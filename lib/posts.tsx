@@ -36,7 +36,8 @@ export function getSortedPostsData() {
   })
 }
 
-export function getAllPostIds() {
+type PostID = {params: {id: string}}
+export function getAllPostIds(): PostID[] {
   const fileNames = fs.readdirSync(postsDirectory)
   return fileNames.map(fileName => {
     return {
