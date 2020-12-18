@@ -45,7 +45,7 @@ django-admin startproject my-site
 
 # Start the Django project using the `manage.py` command
 
-```
+```sh
 cd my-site
 python manage.py runserver
 ```
