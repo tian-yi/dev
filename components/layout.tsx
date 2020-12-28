@@ -1,27 +1,24 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from "next/head";
+import Link from "next/link";
 
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
 
-const name = 'Tianyi Wang'
-export const siteTitle = 'My Blog'
+const name = "Tianyi Wang";
+export const siteTitle = `T-dev`;
 
 export default function Layout({
   children,
-  home
+  home,
 }: {
-  children: React.ReactNode
-  home?: boolean
-}):JSX.Element {
+  children: React.ReactNode;
+  home?: boolean;
+}): JSX.Element {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Tianyi's thoughts." />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -69,5 +66,5 @@ export default function Layout({
         </div>
       )}
     </div>
-  )
+  );
 }
