@@ -3,8 +3,6 @@ title: Markdown reference
 date: '2021-01-02'
 ---
 
-# Markdown Reference
-
 Though I use Markdown often, I admit that I don't write enough of it to
 remember all the syntax. I often I find myself googling Markdown syntax. So I
 decided to write up a quick reference guide for Markdown syntax. I normally write Markdown using the [Github Flavour Markdown(GFM)](https://github.github.com/gfm/).
