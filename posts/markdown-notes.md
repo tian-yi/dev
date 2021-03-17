@@ -5,8 +5,13 @@ date: '2021-01-02'
 
 Though I use Markdown often, I admit that I don't write enough of it to
 remember all the syntax. I often I find myself googling Markdown syntax. So I
-decided to write up a quick reference guide for Markdown syntax. I normally write Markdown using the [Github Flavour Markdown(GFM)](https://github.github.com/gfm/).
-And you can find very good documentation on writing on Github at the [Github doc site](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github).
+decided to write up a quick reference guide for Markdown syntax. I normally
+write Markdown using the [Github Flavour
+Markdown(GFM)](https://github.github.com/gfm/).
+
+And you can find very good documentation on writing on Github at the
+[Github doc site](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github).
+
 
 ## Headings
 
@@ -54,7 +59,7 @@ The *word* or _words_ you are italicized.
 
 ### Strikethrough
 ```
-~~ ~~ 
+~~ ~~
 ~~This was mistaken text~~
 ```
 ~~This was mistaken text~~
@@ -93,7 +98,7 @@ You can also place a caret character on each line of the quote. This is particul
 > Cranly did not answer.
 ```
 
-> His words seemed to have struck some deep chord in his own nature. 
+> His words seemed to have struck some deep chord in his own nature.
 >
 > —Of whom are you speaking? Stephen asked at length.
 >
@@ -217,7 +222,7 @@ Indent the element more than the list item it nested in also with a line break a
   I need to add another paragraph below the second list item.
 
 * And here's the third list item.
-  
+
   > Here's a quote.
 ```
 * This is the first list item.
@@ -226,7 +231,7 @@ Indent the element more than the list item it nested in also with a line break a
   I need to add another paragraph below the second list item.
 
 * And here's the third list item.
-  
+
   > Here's a quote.
 
 ### Github Task lists
@@ -296,14 +301,14 @@ Code blocks are part of the Markdown spec, but syntax highlighting isn't. Howeve
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
 ```python
 s = "Python syntax highlighting"
 print s
 ```
- 
+
 ```
-No language indicated, so no syntax highlighting. 
+No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
 
@@ -394,4 +399,3 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
-
