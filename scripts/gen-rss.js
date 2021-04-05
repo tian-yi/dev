@@ -1,5 +1,5 @@
 const fs = require("fs");
-const fsPromise = require("fs/promises");
+const fsPromise = require("fs").promises;
 const path = require("path");
 const Feed = require("feed").Feed;
 const matter = require("gray-matter");
