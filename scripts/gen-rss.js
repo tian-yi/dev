@@ -1,11 +1,11 @@
-import fs from "fs";
-import { writeFile } from "fs/promises";
-import path from "path";
-import { Feed } from "feed";
-import matter from "gray-matter";
+const fs = require("fs");
+const fsPromise = require("fs/promises");
+const path = require("path");
+const Feed = require("feed").Feed;
+const matter = require("gray-matter");
 
 const postsDirectory = path.join(process.cwd(), "posts");
-export function getSortedPostsData() {
+function getSortedPostsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = fileNames.map((fileName) => {
@@ -68,10 +68,10 @@ function generate() {
       date: new Date(post.date),
     });
   });
-  writeFile("./public/feed.xml", feed.atom1(), "utf-8", (e) => {
+  fsPromise.writeFile("./public/feed.xml", feed.atom1(), "utf-8", (e) => {
     console.log("failed to write" + e);
   });
-  writeFile("./public/json", feed.json1(), "utf-8", () => {
+  fsPromise.writeFile("./public/json", feed.json1(), "utf-8", () => {
     console.log("failed to write");
   });
 }
