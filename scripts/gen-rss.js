@@ -63,7 +63,7 @@ function generate() {
     feed.addItem({
       title: post.title,
       id: post.id,
-      link: "/posts/" + post.id,
+      link: "https://tianyi.dev/posts/" + post.id,
       content: post.content,
       date: new Date(post.date),
     });
