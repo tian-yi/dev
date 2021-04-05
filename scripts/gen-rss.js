@@ -74,7 +74,6 @@ async function generate() {
 
       feed.addItem({
         title: post.title,
-        id: post.id,
         link: "https://tianyi.dev/posts/" + post.id,
         content: contentHtml,
         date: new Date(post.date),
