@@ -22,7 +22,7 @@ function getSortedPostsData() {
     // Combine the data with the id
     return {
       id,
-      conttent: matterResult.content,
+      content: matterResult.content,
       ...matterResult.data,
     };
   });
