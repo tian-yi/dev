@@ -71,7 +71,7 @@ async function generate() {
         .process(post.content);
 
       const contentHtml = processedContent.toString();
-      console.log(contentHtml);
+
       feed.addItem({
         title: post.title,
         id: post.id,
