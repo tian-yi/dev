@@ -1,29 +1,29 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
-import { GetStaticProps } from 'next'
+import { GetStaticProps } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import Date from "../components/date";
+import Layout, { siteTitle } from "../components/layout";
+import { getSortedPostsData } from "../lib/posts";
+import utilStyles from "../styles/utils.module.css";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostsData
-    }
-  }
-}
+      allPostsData,
+    },
+  };
+};
 
 const Home = ({
-  allPostsData
+  allPostsData,
 }: {
   allPostsData: {
-    date: string
-    title: string
-    id: string
-  }[]
-}):JSX.Element => {
+    date: string;
+    title: string;
+    id: string;
+  }[];
+}): JSX.Element => {
   return (
     <Layout home>
       <Head>
@@ -31,7 +31,6 @@ const Home = ({
       </Head>
       <section className={utilStyles.headingMd}>
         <p></p>
-       
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -50,7 +49,7 @@ const Home = ({
         </ul>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 export default Home;

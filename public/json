@@ -1,0 +1,32 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "T-dev",
+    "home_page_url": "https://tianyi.dev/",
+    "feed_url": "https://tianyi.dev/json",
+    "description": "Tianyi's blog feed!",
+    "icon": "https://tianyi.dev/images/profile.jpg",
+    "author": {
+        "name": "Tianyi Laferrere-Wang",
+        "url": "https://tianyi.dev/about"
+    },
+    "items": [
+        {
+            "id": "markdown-notes",
+            "url": "/posts/markdown-notes",
+            "title": "Markdown reference",
+            "date_modified": "2021-01-02T00:00:00.000Z"
+        },
+        {
+            "id": "setup-a-new-django-project-using-poetry",
+            "url": "/posts/setup-a-new-django-project-using-poetry",
+            "title": "Set up a Django project using Poetry",
+            "date_modified": "2020-12-18T00:00:00.000Z"
+        },
+        {
+            "id": "sd-card-application-performance-class",
+            "url": "/posts/sd-card-application-performance-class",
+            "title": "SD Card Application Performance Class",
+            "date_modified": "2020-06-16T00:00:00.000Z"
+        }
+    ]
+}

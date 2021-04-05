@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://tianyi.dev</id>
+    <title>T-dev</title>
+    <updated>2021-04-05T16:17:06.680Z</updated>
+    <generator>awesome</generator>
+    <author>
+        <name>Tianyi Laferrere-Wang</name>
+        <email>hi@tianyi.dev</email>
+        <uri>https://tianyi.dev/about</uri>
+    </author>
+    <link rel="alternate" href="https://tianyi.dev/"/>
+    <link rel="self" href="https://tianyi.dev/feed.xml"/>
+    <subtitle>Tianyi's blog feed!</subtitle>
+    <logo>https://tianyi.dev/images/profile.jpg</logo>
+    <icon>https://tianyi.dev/favicon.ico</icon>
+    <rights>All rights reserved 2020, Tianyi Laferrere-Wang</rights>
+    <entry>
+        <title type="html"><![CDATA[Markdown reference]]></title>
+        <id>markdown-notes</id>
+        <link href="/posts/markdown-notes"/>
+        <updated>2021-01-02T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Set up a Django project using Poetry]]></title>
+        <id>setup-a-new-django-project-using-poetry</id>
+        <link href="/posts/setup-a-new-django-project-using-poetry"/>
+        <updated>2020-12-18T00:00:00.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SD Card Application Performance Class]]></title>
+        <id>sd-card-application-performance-class</id>
+        <link href="/posts/sd-card-application-performance-class"/>
+        <updated>2020-06-16T00:00:00.000Z</updated>
+    </entry>
+</feed>
