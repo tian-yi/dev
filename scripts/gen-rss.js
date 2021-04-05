@@ -43,12 +43,11 @@ function getSortedPostsData() {
 const feed = new Feed({
   title: "T-dev",
   description: "Tianyi's blog feed!",
-  id: "https://tianyi.dev",
+  id: "https://tianyi.dev/",
   link: "https://tianyi.dev/",
   image: "https://tianyi.dev/images/profile.jpg",
   favicon: "https://tianyi.dev/favicon.ico",
   copyright: "All rights reserved 2020, Tianyi Laferrere-Wang",
-  generator: "awesome", // optional, default = 'Feed for Node.js'
   feedLinks: {
     json: "https://tianyi.dev/json",
     atom: "https://tianyi.dev/feed.xml",
