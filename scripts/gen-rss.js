@@ -3,8 +3,12 @@ const fsPromise = require("fs").promises;
 const path = require("path");
 const Feed = require("feed").Feed;
 const matter = require("gray-matter");
+const remark = require("remark");
+const html = require("remark-html");
+const prism = require("remark-prism");
 
 const postsDirectory = path.join(process.cwd(), "posts");
+
 function getSortedPostsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
@@ -56,22 +60,32 @@ const feed = new Feed({
   },
 });
 
-function generate() {
+async function generate() {
   const posts = getSortedPostsData();
 
-  posts.forEach((post) => {
-    feed.addItem({
-      title: post.title,
-      id: post.id,
-      link: "https://tianyi.dev/posts/" + post.id,
-      content: post.content,
-      date: new Date(post.date),
-    });
-  });
-  fsPromise.writeFile("./public/feed.xml", feed.atom1(), "utf-8", (e) => {
+  await Promise.all(
+    posts.map(async (post) => {
+      const processedContent = await remark()
+        .use(prism)
+        .use(html)
+        .process(post.content);
+
+      const contentHtml = processedContent.toString();
+      console.log(contentHtml);
+      feed.addItem({
+        title: post.title,
+        id: post.id,
+        link: "https://tianyi.dev/posts/" + post.id,
+        content: contentHtml,
+        date: new Date(post.date),
+      });
+    })
+  );
+
+  await fsPromise.writeFile("./public/feed.xml", feed.atom1(), "utf-8", (e) => {
     console.log("failed to write" + e);
   });
-  fsPromise.writeFile("./public/json", feed.json1(), "utf-8", () => {
+  await fsPromise.writeFile("./public/feed.json", feed.json1(), "utf-8", () => {
     console.log("failed to write");
   });
 }
