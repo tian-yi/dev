@@ -29,4 +29,4 @@ repositories.
 $ git config --global core.excludesfile ~/.gitignore_global
 ```
 
-That's it.
+That's it, no more repeatedly adding those environment-specific `.gitignore` rules.
