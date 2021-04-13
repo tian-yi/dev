@@ -1,6 +1,6 @@
 ---
 title: Setting up a blog using Next.js
-date: '2020-04-04'
+date: '2021-04-04'
 ---
 
 What will we do in this tutorial:
