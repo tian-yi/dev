@@ -1,6 +1,6 @@
 ---
 title: Create a global .gitignore file
-date: 2021-04-12
+date: '2021-04-12'
 ---
 
 Sometimes we need ignore some files for our own development environment. We could check
