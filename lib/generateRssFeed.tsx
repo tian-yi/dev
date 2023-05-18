@@ -17,7 +17,7 @@ export async function generateRssFeed() {
     title: author.name,
     description: 'Your blog description',
     author,
-    id: siteUrl,
+    id: siteUrl ? siteUrl : '',
     link: siteUrl,
     image: `${siteUrl}/favicon.ico`,
     favicon: `${siteUrl}/favicon.ico`,
