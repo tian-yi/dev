@@ -272,10 +272,10 @@ I am a Functional Programming nerd; a Custom Mechanical Keyboard enthusiast; a M
             Software designer, founder, and amateur astronaut.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Tianyi, a software engineer and entrepreneur based in Dublin,
-            Ireland. I am a Functional Programming nerd; a Custom Mechanical
-            Keyboard enthusiast; a MX Switches & Programming Languages
-            connoisseur; Also a Topre & Emacs enjoyer.
+            I&rsquom Tianyi, a software engineer and entrepreneur based in
+            Dublin, Ireland. I am a Functional Programming nerd; a Custom
+            Mechanical Keyboard enthusiast; a MX Switches & Programming
+            Languages connoisseur; Also a Topre & Emacs enjoyer.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
