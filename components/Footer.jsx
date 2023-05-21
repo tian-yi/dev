@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { Container } from '@/components/Container'
+import { Container } from "@/components/Container";
 
 function NavLink({ href, children }) {
   return (
@@ -10,7 +10,7 @@ function NavLink({ href, children }) {
     >
       {children}
     </Link>
-  )
+  );
 }
 
 export function Footer() {
@@ -27,7 +27,7 @@ export function Footer() {
                 <NavLink href="/uses">Uses</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
+                &copy; {new Date().getFullYear()} Tianyi Wang. All rights
                 reserved.
               </p>
             </div>
@@ -35,5 +35,5 @@ export function Footer() {
         </div>
       </Container.Outer>
     </footer>
-  )
+  );
 }
