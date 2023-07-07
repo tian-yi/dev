@@ -261,7 +261,7 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I'm Tianyi, a software engineer and entrepreneur based in Dublin, Ireland.
+          content="I'm Tianyi, a software engineer and entrepreneur based in Dublin, Ireland."
         />
       </Head>
       <Container className="mt-9">
