@@ -262,8 +262,6 @@ export default function Home({ articles }) {
         <meta
           name="description"
           content="I'm Tianyi, a software engineer and entrepreneur based in Dublin, Ireland.
-I am a Functional Programming nerd; a Custom Mechanical Keyboard enthusiast; a MX Switches & Programming Languages connoisseur; Also a Topre & Emacs enjoyer.
-"
         />
       </Head>
       <Container className="mt-9">
@@ -272,10 +270,8 @@ I am a Functional Programming nerd; a Custom Mechanical Keyboard enthusiast; a M
             Software designer, founder, and amateur astronaut.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&rsquo;m Tianyi, a software engineer and entrepreneur based in
-            Dublin, Ireland. I am a Functional Programming nerd; a Custom
-            Mechanical Keyboard enthusiast; a MX Switches & Programming
-            Languages connoisseur; Also a Topre & Emacs enjoyer.
+            I am Tianyi, a software engineer and entrepreneur based in Dublin,
+            Ireland.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
