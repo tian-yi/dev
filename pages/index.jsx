@@ -256,9 +256,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Tianyi Wang - Software Engineer,Mechanical Keyboard enthusiast
-        </title>
+        <title>Tianyi Wang - Software Engineer and Entrepreneur</title>
         <meta
           name="description"
           content="I'm Tianyi, a software engineer and entrepreneur based in Dublin, Ireland."
@@ -267,7 +265,7 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software Engineer and Entrepreneur
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I am Tianyi, a software engineer and entrepreneur based in Dublin,

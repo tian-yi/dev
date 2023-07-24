@@ -1,22 +1,22 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import clsx from "clsx";
 
-import { Container } from '@/components/Container'
+import { Container } from "@/components/Container";
 import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+} from "@/components/SocialIcons";
+import portraitImage from "@/images/portrait.jpg";
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
-    <li className={clsx(className, 'flex')}>
+    <li className={clsx(className, "flex")}>
       <Link
-      target='_blank'
+        target="_blank"
         href={href}
         className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
       >
@@ -24,7 +24,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
+  );
 }
 
 function MailIcon(props) {
@@ -35,7 +35,7 @@ function MailIcon(props) {
         d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
       />
     </svg>
-  )
+  );
 }
 
 export default function About() {
@@ -45,7 +45,6 @@ export default function About() {
         <title>About - Spencer Sharp</title>
         <meta
           name="description"
-          
           content="I’m Tianyi Wang. I live in Dublin, Ireland, where I design the future."
         />
       </Head>
@@ -58,12 +57,14 @@ export default function About() {
                 alt=""
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                quality={100}
               />
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Tianyi Wang. I live in Dublin, Ireland, where I design the future.
+              I’m Tianyi Wang. I live in Dublin, Ireland, where I design the
+              future.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -89,23 +90,38 @@ export default function About() {
               <p>
                 Today, I’m the founder of Planetaria, where we’re working on
                 civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
+                home so that the next generation of kids really <em>can</em>{" "}
                 make it to orbit — from the comfort of their own backyards.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://twitter.com/tian_yi_wang" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/tian_yi_wang"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="https://www.instagram.com/lambdakeebs/" icon={InstagramIcon} className="mt-4">
+              <SocialLink
+                href="https://www.instagram.com/lambdakeebs/"
+                icon={InstagramIcon}
+                className="mt-4"
+              >
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="https://github.com/tian-yi" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/tian-yi"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/wangtianyi/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/wangtianyi/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
@@ -120,5 +136,5 @@ export default function About() {
         </div>
       </Container>
     </>
-  )
+  );
 }
